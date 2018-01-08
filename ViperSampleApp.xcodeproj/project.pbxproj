@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7902DE0A20035D6500F60900 /* TestProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902DDFB20035D6400F60900 /* TestProtocols.swift */; };
+		7902DE0B20035D6500F60900 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7902DDFC20035D6400F60900 /* Test.storyboard */; };
+		7902DE0C20035D6500F60900 /* TestAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902DDFF20035D6400F60900 /* TestAPIDataManager.swift */; };
+		7902DE0D20035D6500F60900 /* TestLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902DE0120035D6400F60900 /* TestLocalDataManager.swift */; };
+		7902DE0E20035D6500F60900 /* TestWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902DE0320035D6400F60900 /* TestWireframe.swift */; };
+		7902DE0F20035D6500F60900 /* TestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902DE0520035D6400F60900 /* TestInteractor.swift */; };
+		7902DE1020035D6500F60900 /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902DE0720035D6400F60900 /* TestPresenter.swift */; };
+		7902DE1120035D6500F60900 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902DE0920035D6500F60900 /* TestView.swift */; };
 		79B9AC751FE14232000E5795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9AC741FE14232000E5795 /* AppDelegate.swift */; };
 		79B9AC771FE14232000E5795 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9AC761FE14232000E5795 /* ViewController.swift */; };
 		79B9AC7C1FE14232000E5795 /* LoginAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9AC7B1FE14232000E5795 /* LoginAPIDataManager.swift */; };
@@ -78,6 +86,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7902DDFB20035D6400F60900 /* TestProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestProtocols.swift; sourceTree = "<group>"; };
+		7902DDFC20035D6400F60900 /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		7902DDFF20035D6400F60900 /* TestAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAPIDataManager.swift; sourceTree = "<group>"; };
+		7902DE0120035D6400F60900 /* TestLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLocalDataManager.swift; sourceTree = "<group>"; };
+		7902DE0320035D6400F60900 /* TestWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestWireframe.swift; sourceTree = "<group>"; };
+		7902DE0520035D6400F60900 /* TestInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestInteractor.swift; sourceTree = "<group>"; };
+		7902DE0720035D6400F60900 /* TestPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
+		7902DE0920035D6500F60900 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		79B9AC701FE14232000E5795 /* ViperSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B9AC741FE14232000E5795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79B9AC761FE14232000E5795 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +185,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7902DDEB20035D5000F60900 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				7902DDFD20035D6400F60900 /* DataManager */,
+				7902DE0420035D6400F60900 /* Interactor */,
+				7902DE0620035D6400F60900 /* Presenter */,
+				7902DDFA20035D6400F60900 /* Protocols */,
+				7902DDFC20035D6400F60900 /* Test.storyboard */,
+				7902DE0820035D6500F60900 /* View */,
+				7902DE0220035D6400F60900 /* Wireframe */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		7902DDFA20035D6400F60900 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7902DDFB20035D6400F60900 /* TestProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7902DDFD20035D6400F60900 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				7902DDFE20035D6400F60900 /* API */,
+				7902DE0020035D6400F60900 /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		7902DDFE20035D6400F60900 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7902DDFF20035D6400F60900 /* TestAPIDataManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7902DE0020035D6400F60900 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				7902DE0120035D6400F60900 /* TestLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		7902DE0220035D6400F60900 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				7902DE0320035D6400F60900 /* TestWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		7902DE0420035D6400F60900 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7902DE0520035D6400F60900 /* TestInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7902DE0620035D6400F60900 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7902DE0720035D6400F60900 /* TestPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7902DE0820035D6500F60900 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7902DE0920035D6500F60900 /* TestView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		79B9AC671FE14232000E5795 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +288,7 @@
 				79B9AD351FE14232000E5795 /* Assets.xcassets */,
 				79B9AD371FE14232000E5795 /* LaunchScreen.storyboard */,
 				79B9AD3A1FE14232000E5795 /* Info.plist */,
+				7902DDEB20035D5000F60900 /* Test */,
 				79B9AC731FE14232000E5795 /* AppDelegate */,
 				79B9AC781FE14232000E5795 /* Login */,
 				79B9AC911FE14232000E5795 /* SidePanel */,
@@ -756,6 +852,7 @@
 				79B9AD341FE14232000E5795 /* Main.storyboard in Resources */,
 				79B9ACC91FE14232000E5795 /* Home.storyboard in Resources */,
 				79B9ACF01FE14232000E5795 /* menu-button.png in Resources */,
+				7902DE0B20035D6500F60900 /* Test.storyboard in Resources */,
 				79B9ACB11FE14232000E5795 /* SidePanel.storyboard in Resources */,
 				79B9AC901FE14232000E5795 /* Login.storyboard in Resources */,
 				79B9ACE21FE14232000E5795 /* Settings.storyboard in Resources */,
@@ -777,6 +874,7 @@
 				79B9ACDA1FE14232000E5795 /* SettingsProtocols.swift in Sources */,
 				79B9ACBB1FE14232000E5795 /* HomeInteractor.swift in Sources */,
 				79B9AD231FE14232000E5795 /* UILabel.swift in Sources */,
+				7902DE0C20035D6500F60900 /* TestAPIDataManager.swift in Sources */,
 				79B9ACBE1FE14232000E5795 /* HomePresenter.swift in Sources */,
 				79B9AD211FE14232000E5795 /* UIDevice.swift in Sources */,
 				79B9AD031FE14232000E5795 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
@@ -786,6 +884,7 @@
 				79B9AD251FE14232000E5795 /* UIStoryboard.swift in Sources */,
 				79B9AD1F1FE14232000E5795 /* UIColor.swift in Sources */,
 				79B9AD2B1FE14232000E5795 /* UIWindow.swift in Sources */,
+				7902DE0A20035D6500F60900 /* TestProtocols.swift in Sources */,
 				79B9ACC11FE14232000E5795 /* HomeProtocols.swift in Sources */,
 				79B9AC851FE14232000E5795 /* LoginPresenter.swift in Sources */,
 				79B9ACE41FE14232000E5795 /* AppDependencies.swift in Sources */,
@@ -793,6 +892,7 @@
 				79B9AD191FE14232000E5795 /* UIViewAutolayout.swift in Sources */,
 				79B9AD071FE14232000E5795 /* AppEnums.swift in Sources */,
 				79B9AC881FE14232000E5795 /* LoginProtocols.swift in Sources */,
+				7902DE1120035D6500F60900 /* TestView.swift in Sources */,
 				79B9ACFD1FE14232000E5795 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				79B9AC951FE14232000E5795 /* SidePanelAPIDataManager.swift in Sources */,
 				79B9AD001FE14232000E5795 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
@@ -803,12 +903,16 @@
 				79B9ACD41FE14232000E5795 /* SettingsInteractor.swift in Sources */,
 				79B9AC751FE14232000E5795 /* AppDelegate.swift in Sources */,
 				79B9AD171FE14232000E5795 /* UILayout.swift in Sources */,
+				7902DE0E20035D6500F60900 /* TestWireframe.swift in Sources */,
 				79B9ACB81FE14232000E5795 /* HomeLocalDataManager.swift in Sources */,
+				7902DE0D20035D6500F60900 /* TestLocalDataManager.swift in Sources */,
 				79B9AC8E1FE14232000E5795 /* LoginWireframe.swift in Sources */,
 				79B9ACAC1FE14232000E5795 /* Profilecell.swift in Sources */,
 				79B9AD111FE14232000E5795 /* Sequence.swift in Sources */,
 				79B9ACA81FE14232000E5795 /* Emptycell.swift in Sources */,
 				79B9ACCE1FE14232000E5795 /* SettingsAPIDataManager.swift in Sources */,
+				7902DE1020035D6500F60900 /* TestPresenter.swift in Sources */,
+				7902DE0F20035D6500F60900 /* TestInteractor.swift in Sources */,
 				79B9AC9E1FE14232000E5795 /* SidePanelPresenter.swift in Sources */,
 				79B9AD291FE14232000E5795 /* UIVIewController.swift in Sources */,
 				79B9ACC71FE14232000E5795 /* HomeWireframe.swift in Sources */,
