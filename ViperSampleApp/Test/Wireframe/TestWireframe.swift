@@ -3,7 +3,7 @@
 //  ViperSampleApp
 //
 //  Created Manish Kumar on 08/01/18.
-//  Copyright © 2018 Innofied. All rights reserved.
+//  Copyright © 2018 Manish Kumar. All rights reserved.
 //
 //
 

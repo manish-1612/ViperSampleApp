@@ -13,7 +13,7 @@ public enum Storyboard : String {
     case SidePanel = "SidePanel"
     case Home = "Home"
     case Settings = "Settings"
-
+    case Test = "Test"
 }
 
 
